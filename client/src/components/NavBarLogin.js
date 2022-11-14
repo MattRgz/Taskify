@@ -24,8 +24,8 @@ function NavBarLogin() {
               </Offcanvas.Header>
               <Offcanvas.Body className="colorPrimario">
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Link className="letraSecundaria navLink" to="/">Home</Link>
-                  <Link className="letraSecundaria navLink" to="/login">Login</Link>
+                  <Link className="letraSecundaria navLink" to="/">Inicio</Link>
+                  <Link className="letraSecundaria navLink" to="/login">Entrar</Link>
                   <Link className="letraSecundaria navLink" to="/ingresar/user">Registrarse</Link>
                 </Nav>
               </Offcanvas.Body>
