@@ -7,11 +7,12 @@ To start, you have to type "npm start" on client, and start the server with "nod
 # To getting started
 The project doesn't have a database of products, so you have to improve one by the server POST route:
 
-   -    Http://localhost:8080/api/product/new
+   -    http://localhost:8080/api/product/new
    
    -    The DB is builded on MongoDB, so you have to post every product in a JSON file format.
+   -    (ex:
         {
           name: "Tomatos"
         }
-
+         )
 Other way to post a list of products, is by change the "/server/config/mongoose.config.js" file, to another connection with the previous format.
