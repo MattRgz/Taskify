@@ -1,0 +1,455 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@300;400&display=swap')
+
+  
+$colorPrincipal: #b9e2da
+$colorSecundario: #000000
+$colorTerciario: #ffffff
+
+/*Estilos generales*/
+
+@mixin color-Fuente-Principal 
+  background-color: $colorPrincipal
+  font-family: 'Bree Serif', serif
+@mixin color-Fuente-Secundario
+  background-color: $colorSecundario
+  font-family: 'Bree Serif', serif
+@mixin color-Fuente-Terciario
+  background-color: $colorTerciario
+  font-family: 'Bree Serif', serif
+  color: $colorSecundario
+@mixin Fuente-Primaria
+  font-family: 'Bree Serif', serif
+@mixin Fuente-Secundaria
+  font-family: 'Roboto', sans-serif
+  font-size: 16px
+  font-weight: bolder
+@mixin Centrar
+  display: flex
+  align-items: center
+  justify-content: center
+@mixin Centrar2
+  text-align: center
+  vertical-align: auto
+
+@mixin Espaciar
+  display: flex
+  align-items: center
+  margin: 5px
+@mixin savedList
+  display: flex
+  align-items: center
+  margin: 5px
+  justify-content: space-between
+  padding: 0 6%
+  background-color: white
+  margin: 3% 10% 0 10%
+  border-radius: 8px
+  border: solid black 2px
+  text-decoration: none
+  color: black
+  &:hover
+    color: black
+@mixin Bell
+  padding-right: 5px
+@mixin Input
+  border-radius: 5px
+@mixin Label
+  margin-bottom: 2px
+@mixin Flex
+  display:flex
+
+
+
+
+/*Por lo general tendras estos estilos en tu proyecto*/
+
+
+
+/*Estilos parallax*/
+.searchHover
+  background-color: white
+  width: 100%
+  border: black solid 0.5px
+  cursor: pointer
+  &:hover
+    background-color: #d3f7ef
+
+
+.line-1
+    position: relative
+    top: 30%
+    width: 3.35em
+    margin: 0 auto
+    border-right: 2px solid rgba(255,255,255,.75)
+    font-size: 180%
+    text-align: center
+    white-space: nowrap
+    overflow: hidden
+    transform: translateY(-50%)    
+
+.anim-typewriter
+  animation:  typewriter 0.5s steps(7) 1s 1 normal both, blinkTextCursor 600ms steps(44) infinite normal
+@keyframes typewriter
+  0%
+    width: 0
+  100%
+    width: 3.35em
+@keyframes blinkTextCursor
+  0%
+    border-right-color: rgba(255,255,255,.75)
+  100%
+    border-right-color: black
+  
+// -----------------------------------------------------------------------------------------------------------
+
+
+.homeCardReversed
+@media (min-width: 700px) 
+  /* Minimum font size */
+  .homeCardReversed
+    display: flex
+    justify-content: space-around 
+    align-items: center
+    text-align: center 
+    width: 100%
+    height: 30em
+    p
+        font-size: 35px
+        text-align: center
+        padding-right: 15%
+    .CardImg
+      width: 40%
+@media (max-width: 1200px) 
+    .homeCardReversed
+      flex-direction: column-reverse
+      display: flex
+      justify-content: center
+      align-items: center
+      text-align: center 
+      height: 400px
+      p
+
+    .CardImg
+      width: 50%
+      margin-bottom: 20px
+.homeCard
+@media (min-width: 700px) 
+    /* Minimum font size */
+    .homeCard
+      display: flex
+      justify-content: space-around 
+      align-items: center
+      text-align: center 
+      width: 100%
+      height: 30em
+      p
+        font-size: 35px
+        text-align: center
+        padding-left: 15%
+    .CardImg
+      width: 40%
+@media (max-width: 1200px) 
+    /* Maximum font size */
+    .homeCard
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      text-align: center 
+      width: 100%
+      height: 400px
+      p
+
+    .CardImg
+      width: 50%
+      margin-bottom: 25px
+// ------------------------------------------------------------
+.homeBrand
+  font-size: 2vw
+@media (min-width: 700px) 
+    /* Minimum font size */
+    .homeBrand
+      font-size: 1000%
+@media (max-width: 1200px) 
+    /* Maximum font size */
+    .homeBrand
+      font-size: 500%
+.navLink
+    color: black
+    text-decoration: none
+    margin-left: 20px
+    margin-top: 20px
+.colorPrimario 
+    @include color-Fuente-Principal
+.colorSecundario
+    @include color-Fuente-Secundario
+.colorTerciario
+    @include color-Fuente-Terciario
+.letraSecundaria
+    @include Fuente-Secundaria
+.letraPrincipal
+    font-family: 'Bree Serif', serif
+.centrar
+    @include Centrar
+.centrar2
+    @include Centrar2
+    vertical-align: bottom
+.bell
+    @include Bell
+.input
+    @include Input
+.label
+    @include Label
+.espaciar
+    @include Espaciar
+.savedList
+    @include savedList
+    h6 
+      font-family: 'Roboto', sans-serif
+      font-size: 13px
+    &:hover
+      box-shadow: 1px 1px 4px 1px #333a38
+      cursor: pointer
+.newListButtonContainer2
+  border: dashed black 2px
+  margin: 3% 10% 0 10%
+  border-radius: 8px
+  padding: 4%
+.newListButtonContainer3
+    display: flex
+    justify-content: center
+    border: dashed black 2px
+    margin: 3% 20% 0 20%
+    border-radius: 4px
+    padding: 2% 20%
+    cursor: pointer
+    background-color: white
+    text-align: center
+.AddUnespectedProduct
+    display: flex
+    justify-content: center
+    border: dashed black 2px
+    border-radius: 4px
+    padding: 1em 3em
+    cursor: pointer
+    background-color: white
+    text-align: center
+    animation: expandir 0.2s linear
+    animation-fill-mode: forwards
+.AddUnespectedProduct1
+    display: flex
+    justify-content: center
+    border: dashed black 2px
+    border-radius: 4px
+    padding: 1em 3em
+    cursor: pointer
+    background-color: white
+    text-align: center
+    animation: expandir2 0.2s linear
+    animation-fill-mode: forwards
+@keyframes expandir2
+  0%
+    margin: 3% 20% 0 20%
+  50%
+    margin: 3% 18% 0 18%
+  100%
+    margin: 3% 20% 0 20%
+@keyframes expandir
+  0%
+    margin: 3% 20% 0 20%
+  50%
+    margin: 3% 18% 0 18%
+  100%
+    margin: 3% 20% 0 20%
+.formUnespectedProduct
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    text-align: center
+    padding: 1px
+.inputUnespectedProduct
+    margin-bottom: 8px
+    text-align: center
+    border: black solid 1px
+    border-radius: 4px
+    -moz-appearance:textfield
+    &::-webkit-inner-spin-button,::-webkit-outer-spin-button
+      -webkit-appearance: none
+      margin: 0
+.button
+    border-radius: 4px
+    color: white
+    background-color: black
+    border: black solid
+    padding: 1px 4px
+    margin-left: 8px
+    margin-top: 8px
+.button2
+    border-radius: 4px
+    color: black
+    background-color: $colorPrincipal
+    border: $colorPrincipal solid
+    font-weight: bolder
+    padding: 1px 4px
+.button3
+    border-radius: 4px
+    color: white
+    width: 50%
+    background-color: black
+    border: black solid
+    font-weight: bolder
+    padding: 1px 4px
+.deleteButton
+    background-color: #B22222
+    color: white
+    font-size: 15px
+    border-radius: 8px
+.newListButtonContainer
+    display: flex
+    flex-direction: column
+    align-items: center
+.newListButton
+    margin-top: 2%
+    border-radius: 4px
+    color: white
+    background-color: black
+    padding: 3px
+.derecha
+    display: flex
+    justify-content: end
+    margin-right: 15%
+.searchButton
+    border-radius: 0 5px 5px 0
+    margin-left:-10px
+    width:100px
+    margin-top:15px
+    color: white
+    background: black
+.searchInput
+    border-radius: 5px 0 0 5px
+    padding-left: 15px
+    margin-top: 15px
+input[type="checkbox"]
+    display: none
+input[type="checkbox"] + label:before
+    content:''
+    width: 26px
+    height: 26px
+    float: left
+    margin: 0.5em 0.5em 0 0
+    border: 2px solid #ccc
+    background: #fff
+    cursor: pointer
+    animation: boxUnAnimation 0.1s linear
+    animation-fill-mode: forwards
+input[type="checkbox"]:checked + label:before
+    cursor: pointer
+    border-color: black
+    animation: boxAnimation 0.1s linear
+    animation-fill-mode: forwards
+input[type="checkbox"]:checked + label:after
+    content: ""
+    width: 32px
+    height: 14px
+    border: 4px solid black
+    float: left
+    border-right: 0
+    border-top: 0
+    animation: checkAnimation 0.1s linear
+    animation-fill-mode: forwards
+    border-radius: 1px
+    transform: rotate(-55deg)
+    margin-top: 0.5em
+@keyframes boxUnAnimation
+  0%
+    border-radius: 15px
+  100%
+    border-radius: 5px
+@keyframes boxAnimation 
+    0%
+      border-radius: 5px
+    100%
+      border-radius: 15px
+@keyframes checkAnimation 
+    0%
+      width: 1px
+      height: 1px
+      margin-left: -1em
+    100%
+      margin-left: -1.8em
+      width: 24px
+      height: 10px
+.nameListInput
+    border: dashed black 1px
+    border-radius: 4px
+    background-color: $colorPrincipal
+    height: 2.4em
+    width: 20em
+    font-size: 1.5em
+    text-decoration: none
+    font-weight: 1
+    text-align: center
+
+
+
+
+
+.container
+  height: 100vh
+  overflow: hidden
+  overflow-y: auto
+  perspective: 3px
+  
+
+
+
+
+.section 
+  background-size: cover
+  color: white
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+.parallax-bg
+    
+  background-position: center center
+  background:url(./image/fondo.jpg)
+  transform: translateZ(-0.5px) scale(2)
+  background-size: cover
+  z-index: -1
+  height: 50vh
+  
+
+.parallax-content
+  z-index: -1
+  transform: translateY(-25vh) translateZ(0px) scale(1)
+  padding-left:30px
+  padding-right:30px
+  text-align:center
+
+.no-parallax-section
+  height: 50vh
+
+.no-parallax-content
+  text-align: center
+  padding:30px
+
+/*Colores de fondo*/
+.bg-1
+  background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(234,38,255,1) 0%, rgba(0,212,255,1) 100%)
+
+.bg-2
+  background:linear-gradient(90deg, rgba(0,83,33,1) 0%, rgba(215,198,1,1) 100%)
+
+.avatar
+  width: 150px
+  height: 100px
+  background-image: url(./image/profilePicture.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: 50% 50%
