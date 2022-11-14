@@ -7,7 +7,7 @@ various tools were used. For example:
 ## Excalidraw:
   ![AvanceProyecto](https://user-images.githubusercontent.com/100500096/201583907-b6c92cb5-1d68-4f64-894b-5e9442e964d6.png)
   
-  A tool that was used for design and map the aplication. Currently It could be improve with the use of UML.
+  A tool that was used for design and map the aplication. Currently It could be improved with the use of UML Diagrams.
 
 ## Notion:
   ![image](https://user-images.githubusercontent.com/100500096/201584042-012abaca-07a8-42de-9283-46ed6b11c017.png)
