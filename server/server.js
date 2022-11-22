@@ -16,5 +16,5 @@ require("./server/routes/product.routes")(app);
 require("./server/routes/user.routes")(app);
 
 app.listen(8080, () => {
-  console.log("The server is all fired up on port 8080")
+  console.log("The server is all fired up")
 });
